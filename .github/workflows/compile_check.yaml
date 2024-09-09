@@ -27,4 +27,3 @@ jobs:
         uses: arduino/arduino-lint-action@v1
         with:
           project-type: library
-          path: SW-420-Driver.zip
