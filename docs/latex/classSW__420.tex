@@ -1,0 +1,70 @@
+\doxysection{SW\+\_\+420 Class Reference}
+\hypertarget{classSW__420}{}\label{classSW__420}\index{SW\_420@{SW\_420}}
+
+
+An arduino device driver abstraction for the SW-\/420 Vibration Sensor.  
+
+
+
+
+{\ttfamily \#include $<$SW-\/420-\/\+Driver.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSW__420_acd9a33b3ee08badd933f693f089fef2d}{SW\+\_\+420}} (int D0)
+\begin{DoxyCompactList}\small\item\em Sets the D0 to INPUT mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSW__420_ac3b5b2eda38e44d0e2cb626d53f2ed3e}{is\+Vibration\+Detected}} ()
+\begin{DoxyCompactList}\small\item\em Determines if vibration is currently detected by the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An arduino device driver abstraction for the SW-\/420 Vibration Sensor. 
+
+This is a driver for a vibration sensor. The only pin that is used is the D0 pin. The D0 pin takes Voltage as INPUT. If the voltage is HIGH, then vibration is detected, otherwise then vibration is not detected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em D0} & The D0 input pin. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSW__420_acd9a33b3ee08badd933f693f089fef2d}\index{SW\_420@{SW\_420}!SW\_420@{SW\_420}}
+\index{SW\_420@{SW\_420}!SW\_420@{SW\_420}}
+\doxysubsubsection{\texorpdfstring{SW\_420()}{SW\_420()}}
+{\footnotesize\ttfamily \label{classSW__420_acd9a33b3ee08badd933f693f089fef2d} 
+SW\+\_\+420\+::\+SW\+\_\+420 (\begin{DoxyParamCaption}\item[{int}]{D0}{}\end{DoxyParamCaption})}
+
+
+
+Sets the D0 to INPUT mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D0} & The D0 input pin. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSW__420_ac3b5b2eda38e44d0e2cb626d53f2ed3e}\index{SW\_420@{SW\_420}!isVibrationDetected@{isVibrationDetected}}
+\index{isVibrationDetected@{isVibrationDetected}!SW\_420@{SW\_420}}
+\doxysubsubsection{\texorpdfstring{isVibrationDetected()}{isVibrationDetected()}}
+{\footnotesize\ttfamily \label{classSW__420_ac3b5b2eda38e44d0e2cb626d53f2ed3e} 
+bool SW\+\_\+420\+::is\+Vibration\+Detected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Determines if vibration is currently detected by the sensor. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if vibration is detected, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/SW-\/420-\/\+Driver.\+h\item 
+src/SW-\/420-\/\+Driver.\+cpp\end{DoxyCompactItemize}
