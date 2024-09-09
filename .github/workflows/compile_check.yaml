@@ -27,3 +27,9 @@ jobs:
         uses: arduino/arduino-lint-action@v1
         with:
           project-type: library
+
+      - name: Compile Check
+        uses: ArminJo/arduino-test-compile@v3
+        with:
+          arduino-board-fqbn: arduino:avr:uno
+          sketch_names-test-start: examples/
