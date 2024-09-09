@@ -20,6 +20,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Create Library
-        run: zip -r SW-420-Driver.zip src/ library.properties
-        
+      - name: Checkout Library Compilance
+        uses: arduino/arduino-lint-action@v1
+        with:
+          project-type: library
