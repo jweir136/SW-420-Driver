@@ -32,3 +32,15 @@ jobs:
         uses: ArminJo/arduino-test-compile@v3
         with:
           arduino-board-fqbn: arduino:avr:uno
+
+      - name: Create Directory for Download
+        run: mkdir SW-420-Driver/
+
+      - name: Copy files to Directory
+        run: cp src/ SW-420-Driver/ && cp examples/ SW-420-Driver/ && cp library.properties SW-420-Driver/
+
+      - name: Deploy 
+        uses: actions/upload-artifact@v3
+        with:
+            name: SW-420-Driver
+            path: SW-420-Driver/
