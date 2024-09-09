@@ -1,0 +1,22 @@
+########################################################################
+##  This is a script that checks that the library is able to compile  ##
+########################################################################
+
+name: Ardiuno Driver Compile Check
+on:
+  push:
+    branches:
+      - master
+  
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  compile_check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout2v3
+
