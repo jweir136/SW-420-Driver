@@ -16,6 +16,6 @@ class SW_420
 
     private:
         int D0;
-}
+};
 
 #endif
