@@ -1,6 +1,12 @@
 #ifndef SW_420_DRIVER_H
 #define SW_420_DRIVER_H
 
+#if ARDUINO >= 100
+    #include "Arduino.h"
+#else
+    #include "wProgram.h"
+#endif
+
 class SW_420
 {
     public:
