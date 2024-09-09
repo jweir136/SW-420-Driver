@@ -37,7 +37,7 @@ jobs:
         run: mkdir SW-420-Driver/
 
       - name: Copy files to Directory
-        run: cp src/ SW-420-Driver/ && cp examples/ SW-420-Driver/ && cp library.properties SW-420-Driver/
+        run: cp -r src/ SW-420-Driver/ && cp -r examples/ SW-420-Driver/ && cp library.properties SW-420-Driver/
 
       - name: Deploy 
         uses: actions/upload-artifact@v3
